@@ -30,6 +30,9 @@ li {
   cursor: pointer;
   list-style: none;
 }
+button {
+  cursor: pointer;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -43,13 +46,15 @@ html {
 }
 /* css custom properties - "variables" */
 nav {
-  padding: 1.6rem 2.5rem;
+  padding: 1.4rem 2.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .logo {
   max-width: 3.2rem;
+  position: relative;
+  top: 0.18rem;
 }
 .left-menu {
   display: flex;
@@ -87,10 +92,10 @@ nav {
   border-radius: 100px;
   background: none;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 .right-menu button {
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border: 1px solid #000;
 }
 .right-menu > button:nth-child(3) {
@@ -383,7 +388,100 @@ nav {
 footer {
   box-shadow: 0 -1px 3px rgb(0 0 0 / 10%), 0 -2px 2px rgb(0 0 0 / 6%),
     0 0 2px rgb(0 0 0 / 7%);
+  display: flex;
+  flex-direction: column;
 }
 .footer-links {
   display: flex;
+  padding: 1.5rem 0 2rem 2rem;
+}
+.f__link {
+  margin-right: 5rem;
+  max-width: 10rem;
+}
+.f__link .title h2 {
+  font-size: 1.17rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+.f__link ul li {
+  color: rgba(0, 0, 0, 0.58);
+  padding: 0.8rem 0;
+}
+
+.footer__bottom {
+  width: 95%;
+  margin: 0 auto;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 0;
+}
+.socials {
+  display: flex;
+  gap: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+.socials li i {
+  font-size: 1.8rem;
+  color: #212121;
+}
+.b-links {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.b-links li {
+  padding: 0 1.3rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 1rem;
+}
+.b-links li:first-child {
+  padding-left: 0;
+}
+.b-links li:last-child {
+  border: none;
+}
+.b-links li a {
+  color: #212121;
+}
+.b-links li a:hover {
+  text-decoration: underline;
+}
+#copy {
+  color: rgba(0, 0, 0, 0.58);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/*hover states */
+.left-menu > ul li a:hover {
+  color: #00754a;
+}
+.right-menu a:hover {
+  color: #00754a;
+}
+.right-menu a:hover i {
+  color: #00754a;
+}
+.right-menu > button:nth-child(3):hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.right-menu > button:nth-child(4):hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.first__banner a:hover {
+  text-decoration: none;
+}
+.s_b__text_side button:hover,
+.s_s__text_side button:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+.t_b__text_side button:hover,
+.f_b__text_side button:hover,
+.f_s__text_side button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.notice p a:hover {
+  text-decoration: none;
+}
+.f__link ul li:hover {
+  color: rgba(0, 0, 0, 1);
 }
