@@ -506,6 +506,10 @@ footer {
 .f__link ul li:hover {
   color: rgba(0, 0, 0, 1);
 }
+.down,
+.up {
+  display: none;
+}
 
 /*media*/
 
@@ -728,6 +732,10 @@ footer {
     width: 95%;
   }
   /**/
+  .down,
+  .up {
+    display: unset;
+  }
   .footer-links {
     flex-direction: column;
     padding: 2.5rem 0 0 1rem;
